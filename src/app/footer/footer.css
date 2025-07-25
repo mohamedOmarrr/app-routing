@@ -1,0 +1,22 @@
+footer {
+    background-color: #2b3d4f;
+    color: white;
+}
+
+.copyrights {
+    background-color: #19242e;
+}
+
+ul li a {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-weight: 600;
+}

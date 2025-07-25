@@ -1,0 +1,36 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 3;
+    background-color: #2b3d4f;
+    cursor: pointer;
+    color: white;
+}
+
+.Home {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+
+ul.toggle-menu {
+    color: azure;
+    max-height: 0;
+    transition: max-height 0.8s ease;
+    overflow: hidden;
+}
+
+ul.toggle-menu.component-links {
+    max-height: 500px;
+}
+
+a.active {
+    background: #1abd9c;
+    padding: 6px;
+    border-radius: 10px;
+}

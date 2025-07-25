@@ -1,0 +1,29 @@
+section {
+    margin-top: 104px;
+    background-color: #1abd9c;
+    color: white;
+}
+
+img {
+    width: 250px;
+}
+
+.head-content h1::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: 30%;
+    height: 4px;
+    background-color: white;
+}
+
+.head-content h1::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    width: 30%;
+    height: 4px;
+    background-color: white;
+}

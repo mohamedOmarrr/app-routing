@@ -1,0 +1,82 @@
+section{
+    margin-top: 104px;
+}
+
+.head-content h1::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 70px;
+    width: 23%;
+    height: 4px;
+    background-color: #2b3d4f;
+}
+
+.head-content h1::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 70px;
+    width: 23%;
+    height: 4px;
+    background-color: #2b3d4f;
+}
+
+.card {
+    border: none;
+}
+
+.card .inner::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(26, 189, 156, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card .inner:hover::after {
+    opacity: 1;
+}
+
+.card .inner i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.card .inner:hover i {
+    opacity: 1;
+}
+
+.layoutOnSection {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+}
+
+.layoutOnSection img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    border-radius: 10px;
+}

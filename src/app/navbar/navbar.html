@@ -1,0 +1,21 @@
+<nav>
+    <div class="container d-flex flex-column">
+        <div class="up-sec d-flex justify-content-between align-items-baseline">
+            <a routerLink="/home" class="Home">START FRAMEWORK</a>
+            <ul class="d-none d-lg-flex">
+                <li class="list-unstyled me-3"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/about" routerLinkActive="active">ABOUT</a></li>
+                <li class="list-unstyled me-3"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
+            </ul>
+            <i class="fas fa-bars d-lg-none fs-4 p-2 border border-3 rounded-3" (click)="checkToggle()"></i>
+        </div>
+
+        <ul class="toggle-menu" [class.component-links]=" toggle === true ">
+            <li class="list-unstyled mt-2 mb-4"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/about" routerLinkActive="active">ABOUT</a></li>
+            <li class="list-unstyled mb-4"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+            <li class="list-unstyled mb-4"><a class="text-decoration-none text-white fs-6 fw-bold" routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
+        </ul>
+        
+    </div>
+</nav>
+
